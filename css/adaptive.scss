@@ -1,0 +1,777 @@
+// MIN 992 =================================================================================================================
+@media (min-width: 992px) {
+	.menu__link {
+		padding: 21px 0;
+		border-bottom: 2px solid transparent;
+		transition: border-bottom .3s linear;
+
+		&:hover {
+			border-bottom-width: 27px;
+			border-bottom: 2px solid #db0038;
+		}
+
+		&._active {
+			border-top: 3px solid #db0038;
+			color: #fff;
+		}
+	}
+
+	.slick-arrow.slick-prev,
+	.slick-arrow.slick-next {
+		transition: background .5s ease;
+	}
+
+	.slick-arrow.slick-prev:hover {
+		transition: background .5s ease;
+		background: url("../images/elements/redleft.png");
+	}
+
+	.slick-arrow.slick-next:hover {
+		transition: background .5s ease;
+		background: url("../images/elements/redright.png");
+	}
+
+	.text__menu-wrap:hover .text__menu-link {
+		text-decoration: underline;
+	}
+
+	// ABOUT SECTION --------------------------------------------------------------------
+
+	.profile__icon::before,
+	.profile__icon img {
+		transition: background-image .3s ease, filter .3s ease;
+	}
+
+	.profile__item:hover .profile__icon::before {
+		background-image: url("../images/about-section/red-hexa.png");
+	}
+
+	.profile__item:hover .profile__icon img {
+		filter: invert(100%);
+	}
+
+	.profile__item {
+		transition: background-color .3s ease, color .3s ease, border-radius .3s ease;
+	}
+
+	.profile__item:hover {
+		background-color: #2a2a2a;
+		color: #dad6d6;
+		border-radius: 10px;
+	}
+
+	// GALLERY SECTION
+	.port__button {
+		transition: transform .3s ease-out;
+	}
+
+	.port__button:hover {
+		transform: scale(1.09);
+	}
+
+	.port--rows img {
+		transition: filter .3s ease-out;
+		filter: brightness(50%);
+
+		&:hover {
+			filter: brightness(100%);
+		}
+	}
+
+	.modal__close {
+		transition: filter .5s ease;
+
+		&:hover {
+			transition: filter .5s ease;
+			filter: brightness(60%);
+		}
+	}
+
+	.modal__prev,
+	.modal__next {
+		transition: filter .5s ease;
+
+		&:hover {
+			transition: filter .5s ease;
+			filter: brightness(60%);
+		}
+	}
+
+	// FEATURES SECTION -----------------------------------------------------------------------------
+	.feat__left-text,
+	.feat__right-text {
+		transition: color .3s ease-out;
+	}
+
+	.left__title-wrap,
+	.right__title-wrap {
+		transition: background-color .3s ease-out, border .3s linear;
+
+		&:hover {
+			background-color: #db0038;
+			border: 1px solid transparent;
+		}
+
+		&:hover .feat__left-text,
+		&:hover .feat__right-text {
+			color: #fff;
+		}
+	}
+
+	.left__title-wrap {
+		transition: background .3s ease-out, background-color .3s ease-out;
+
+		&:hover::before {
+			background: url("../images/elements/success-red.png");
+		}
+
+		&:hover::after {
+			background-color: #fff;
+		}
+	}
+
+	.right__title-wrap {
+		transition: background .3s ease-out, background-color .3s ease-out;
+
+		&:hover::after {
+			background: url("../images/elements/success-red.png");
+		}
+
+		&:hover::before {
+			background-color: #fff;
+		}
+	}
+
+	// TEAM SECTION -----------------------------------------------------
+
+	.team__item:hover .team__photo img{
+		opacity: 0;
+	}
+	.team__item:hover .team__contacts {
+		display: inline-block;
+	}
+	.team__item:hover .team__name {
+		color: $red-color;
+	}
+
+}
+
+// MAX 1400 ========================================================================
+@media (max-width: 1400px) {
+	.company__item::before {
+		left: 5%;
+	}
+
+	.company__item--fish::after {
+		left: 5%;
+	}
+
+	.company__item--fly::after {
+		left: 5%;
+	}
+
+	.company__item--bug::after {
+		left: 5%;
+	}
+
+	.company__item--eagle::after {
+		left: 5%;
+	}
+}
+
+@media (max-width: 1250px) {
+	.clients__comments {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.comments__slider {
+		width: 60%;
+		margin-bottom: 50px;
+	}
+
+	.comments__company {
+		width: 100%;
+	}
+
+	.company__item {
+		height: 116px;
+	}
+}
+
+//  MAX 1130 =================================================================
+@media (max-width: 1130px) {
+	.header__menu {
+		margin-right: 0;
+		margin-left: 30%;
+	}
+
+	.slick-arrow.slick-prev,
+	.slick-arrow.slick-next {
+		top: 35%;
+	}
+
+	.port__box .port--rows {
+		max-height: 150px;
+	}
+
+	.port--rows img {
+		width: 25%;
+	}
+
+	// FEATURES SECTION
+	.feat__midder-image {
+		display: none;
+	}
+
+	.feat__titles-left,
+	.feat__titles-right {
+		width: 48%;
+	}
+
+	.left__title-wrap::before {
+		right: 4.5%;
+	}
+
+	.right__title-wrap::after {
+		left: 4.5%;
+	}
+}
+
+//  MAX 1100 =================================================================
+@media (max-width: 1100px) {
+	.main__team {
+		display: block;
+		overflow: hidden;
+	}
+	.team__item {
+		margin-right: 10px;
+	}
+}
+
+// MAX 993 ==========================================================================
+@media (max-width: 993px) {
+	.menu__icon {
+		display: block;
+		position: fixed;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 1060;
+
+		&::before,
+		&::after {
+			content: "";
+		}
+
+		& span,
+		&::before,
+		&::after {
+			left: 0;
+			position: absolute;
+			height: 10%;
+			width: 100%;
+			transition: all .3s ease 0s;
+			background: #fff;
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		& span {
+			top: 50%;
+			transform: scale(1) translate(0, -50%);
+		}
+
+		&._active span {
+			transform: scale(0) translate(0, -50%);
+		}
+
+		&._active::before {
+			top: 50%;
+			transform: rotate(-45deg) translate(0, -50%);
+		}
+
+		&._active::after {
+			top: 50%;
+			transform: rotate(45deg) translate(0, 50%);
+		}
+	}
+
+	.topmenu__wrap {
+		position: relative;
+	}
+
+	.logo__box {
+		padding: 5px;
+		z-index: 1770;
+		position: fixed;
+		top: -5px;
+		left: 15px;
+	}
+
+	.logo__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.header__menu {
+		margin: 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+
+	.menu__body {
+		position: fixed;
+		top: 0;
+		right: -100%;
+		width: 50%;
+		height: 100%;
+		background-color: #08070cf3;
+		padding: 100px 30px 30px 30px;
+		transition: right .3s ease 0s;
+		overflow: auto;
+
+		&::before {
+			content: "";
+			position: fixed;
+			width: 100%;
+			top: 0;
+			left: 0;
+			height: 70px;
+			background-color: #08070c;
+			z-index: 1070;
+		}
+
+		&._active {
+			right: 0;
+		}
+	}
+
+	.header__menu ul {
+		flex-direction: column;
+	}
+
+	.menu__list>li {
+		margin-top: 30px;
+	}
+
+	.menu__link {
+		margin-top: 30px;
+		font-size: 24px;
+
+		&._active {
+			border-top: none;
+			color: #fff;
+		}
+	}
+
+	.slick-arrow.slick-prev,
+	.slick-arrow.slick-next {
+		top: 50%;
+	}
+
+	.header__box-img {
+		height: 650px;
+	}
+
+	// HEADER TEXT -----------------------------------------------------------------------------------------------------
+
+	.header__h {
+		margin-bottom: 25px;
+	}
+
+	.header__btn-box {
+		margin-top: 30px;
+	}
+
+	// ABOUT US SECTION --------------------------------------------------------------------------------------------
+
+	.art__container {
+		// display: none;
+		padding: 0;
+		height: 0;
+		transition: padding .3s linear, height .3s ease-out;
+
+		&._show {
+			// display: block;
+			padding: 15px;
+			height: auto;
+		}
+	}
+
+	.about__text-wrap {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+
+		&>*:not(:first-child) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.about__all-text {
+		max-width: 100%;
+	}
+
+	// ABOUT PROFILE ----------------------------------------------------------------------
+	// ABOUT SECTION --------------------------------------------------------------------
+
+	.profile__icon::before,
+	.profile__icon img {
+		transition: background-image .3s ease, filter .3s ease;
+	}
+
+	.profile__item:active .profile__icon::before {
+		background-image: url("../images/about-section/red-hexa.png");
+	}
+
+	.profile__item:active .profile__icon img {
+		filter: invert(100%);
+	}
+
+	.profile__item {
+		transition: background-color .3s ease, color .3s ease, border-radius .3s ease;
+	}
+
+	.profile__item:active {
+		background-color: #2a2a2a;
+		color: #dad6d6;
+		border-radius: 10px;
+	}
+
+	.about__profile {
+		display: block;
+	}
+
+	// FEATURES SECTION -----------------------------------------------------------------------------
+
+	.left__title-wrap,
+	.right__title-wrap {
+		&:active {
+			background-color: #db0038;
+			border: 1px solid transparent;
+		}
+
+		&:active .feat__left-text,
+		&:active .feat__right-text {
+			color: #fff;
+		}
+	}
+
+	.left__title-wrap {
+		&:active::before {
+			background: url("../images/elements/success-red.png");
+		}
+
+		&:active::after {
+			background-color: #fff;
+		}
+	}
+
+	.right__title-wrap {
+		&:active::after {
+			background: url("../images/elements/success-red.png");
+		}
+
+		&:active::before {
+			background-color: #fff;
+		}
+	}
+
+	// COMMENTS SLIDER
+	.comments__slider {
+		width: 100%;
+		overflow: visible;
+	}
+
+	
+}
+
+// MAX 800 ==========================================================================================================
+@media (max-width: 800px) {
+	.header__box-img {
+		height: 600px;
+	}
+
+	.header__h {
+		font-size: 20px;
+	}
+
+	.header__article {
+		font-size: 10px;
+	}
+
+	.header__reb-button {
+		font-size: 15px;
+	}
+
+	.header__black-button {
+		font-size: 15px;
+	}
+
+	// PORTFOLIO SECTION 
+	.port__h {
+		position: relative;
+	}
+
+	.show__images-btn {
+		display: inline-block;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 21px;
+			height: 21px;
+			right: 5px;
+			top: 25%;
+			border-radius: 50%;
+			background-color: #fff;
+			z-index: 3;
+			transition: right .3s ease-out;
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 25px;
+			height: 15px;
+			right: -10px;
+			top: 35%;
+			border-radius: 10px;
+			background-color: bisque;
+		}
+	}
+
+	.show__images-btn.open {
+		&::before {
+			background-color: #504e4e;
+			right: -20px;
+		}
+
+		&::after {
+			background-color: #888181;
+		}
+	}
+
+	.port__box {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		&._hidden {
+			display: none;
+		}
+	}
+
+	.port__box .port--rows {
+		flex-direction: column;
+		max-height: none;
+		width: 100%;
+
+		& img {
+			min-width: 300px;
+			min-height: 300px;
+			width: 450px;
+			height: 450px;
+			max-width: 450px;
+			max-height: 450px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.modal {
+		height: 75%;
+		width: 65%;
+		top: 13%;
+		left: 20%;
+	}
+
+	// FEATURES SECTION
+	.FEATURES {
+		padding: 100px 0;
+	}
+
+	.feat__midder-image {
+		display: none;
+	}
+
+	.feat__titles-left,
+	.feat__titles-right {
+		width: 48%;
+	}
+
+	.left__title-wrap::before,
+	.left__title-wrap::after {
+		content: none;
+	}
+
+	.right__title-wrap::after,
+	.right__title-wrap::before {
+		content: none;
+	}
+
+}
+
+// MAX 640 ==========================================================================================================
+@media (max-width: 640px) {
+
+	.header__box-img {
+		height: 550px;
+	}
+
+	.header__h {
+		margin-bottom: 15px;
+	}
+
+	.header__btn-box {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.header__reb-button {
+		font-size: 10px;
+		margin: 0;
+	}
+
+	.header__black-button {
+		font-size: 10px;
+		margin: 0;
+	}
+
+	.header__btn-box>*:not(:last-child) {
+		margin: 0 0 10px;
+	}
+
+
+	// ABOUT US SECTION --------------------------------------------------------------------------------------------
+	.about__wrapper {
+		padding: 5em 0;
+	}
+
+	.about__profile {
+		margin-top: 50px;
+	}
+
+	.about__photo-box {
+
+		&::before,
+		&::after {
+			height: 250px;
+		}
+	}
+
+	.about__photo-box img {
+		width: 335px;
+		height: 300px;
+	}
+
+	// PORTFOLIO SECTION 
+	.modal {
+		height: 85%;
+		width: 90%;
+		top: 7%;
+		left: 6%;
+	}
+
+	// CLIENTS SECTION
+	.clients__comments {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.comments__company {
+		display: inline-block;
+		gap: 0;
+		width: 95%;
+		overflow: hidden;
+	}
+
+	.company__item {
+		height: 116px;
+	}
+}
+
+// MAX 500 ==========================================================================================================
+@media (max-width: 500px) {
+	.header__box-img {
+		height: 675px;
+	}
+
+	.menu__body {
+		width: 100%;
+	}
+
+	// ABOUT US SECTION --------------------------------------------------------------------------------------------
+
+	.text__menu-wrap {
+		padding: 15px 15%;
+	}
+
+	.about__photo-box {
+
+		&::before,
+		&::after {
+			height: 190px;
+		}
+	}
+
+	.about__photo-box img {
+		width: 278px;
+		height: 247px;
+	}
+
+	// PORTFOLIO SECTION 
+	.port__box {
+		margin-top: 30px;
+	}
+
+	.modal {
+		height: 100%;
+		width: 100%;
+		top: 0%;
+		left: 0%;
+	}
+
+	// FEATURES SECTION
+	.feat__main {
+		flex-direction: column;
+		margin-top: 60px;
+	}
+
+	.left__title-wrap,
+	.right__title-wrap {
+		padding: 20px 5%;
+	}
+
+	.feat__titles-left,
+	.feat__titles-right {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+
+}
+
+// MAX 400 ==========================================================================================================
+@media (max-width: 400px) {
+	.logo__box {
+		width: 210px;
+	}
+
+	.port__box .port--rows img {
+		min-height: 150px;
+		height: 200px;
+	}
+}

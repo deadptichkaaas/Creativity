@@ -1,0 +1,13 @@
+function t2() {
+  let xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+      let dataOut = this.responseText;
+      document.querySelector('.out-2').textContent = dataOut;
+    }
+  }
+  xhttp.open("GET", "http://getpost.itgid.info/index2.php?auth=7859d9d42a8834141d529577207c9596&action=2&name=Sergey");
+  xhttp.send();
+}
+
+document.querySelector('.b-2').onclick = t2;
