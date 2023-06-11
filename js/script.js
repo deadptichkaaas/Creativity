@@ -100,8 +100,6 @@ $(document).ready(function () {
 	// MENU NAVIGATION =====================================================================================================================
 	const menuList = document.querySelectorAll('.menu__link[data-goto]');
 
-	console.log(menuList);
-
 	if (menuList.length > 0) {
 		menuList.forEach(menuLink => {
 			menuLink.addEventListener('click', onMenuLinkClick);
